@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			import com.rodcez.towerdefense.model.vo.UserVO;
+			
+			import mx.collections.ArrayCollection;
+			
+			[Bindable] public var nameInput : String = "";
+			[Bindable] public var emailInput : String = "";
+			[Bindable] public var activeCheckBox : Boolean;
+			[Bindable] public var dataComboBox : ArrayCollection;
+			
+			public function populateView (item : UserVO):void {
+				nameInput = item.name;
+				emailInput = item.email;
+				activeCheckBox = item.active;
+			}
+		]]>
+	</fx:Script>
+	
+	<s:BorderContainer top="10" left="10" cornerRadius="10" backgroundColor="#f1f1f1" borderAlpha="0">
+		<s:VGroup top="10" bottom="10" left="10" right="10">
+			<s:Label text="Nome : {nameInput}" fontWeight="bold" />
+			<s:Label text="Email : {emailInput}" fontWeight="bold" />
+			<s:CheckBox label="Ativo" selected="{activeCheckBox}" fontWeight="bold" />
+		</s:VGroup>
+	</s:BorderContainer>
+</s:Group>
