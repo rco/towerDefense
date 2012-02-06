@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<projectDescription>
+	<name>TowerDefense</name>
+	<comment/>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.adobe.flexbuilder.project.flexbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.adobe.flexbuilder.project.actionscriptnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>bin-release</name>
+			<type>2</type>
+			<location>C:/Documents and Settings/Ghenson/My Documents/My Flash/td/lesson04</location>
+		</link>
+	</linkedResources>
+</projectDescription>
+
